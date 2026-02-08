@@ -1,0 +1,23 @@
+import java.util.ArrayList;
+
+public class pedido {
+int id;
+String cliente;
+String lista_de_platos;
+String estado;
+ArrayList<plato> platos = new ArrayList<>();
+
+public pedido(int id, String cliente, String lista_de_platos, String estado){
+this.id = id;
+this.cliente = cliente;
+this.lista_de_platos = lista_de_platos;
+this.estado = "Recibido";
+}
+public void agregarplato (plato p){
+platos.add(
+}
+
+}
+
+
+
