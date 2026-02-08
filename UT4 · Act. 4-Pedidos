@@ -1,4 +1,18 @@
 public class Plato {
+String nombre;
+double precio;
+int cantidad;
+
+public plato (String nombre, double precio, int cantidad) {
+this.nombre = nombre;
+this.precio = precio;
+this.cantidad = cantidad;
+}
+
+public double getTotal() {
+return cantidad * precio;
+}
+}
 
 
 
