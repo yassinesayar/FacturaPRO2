@@ -19,10 +19,6 @@ System.out.println("No se pueden agregar mas de 5 platos");
 }
 platos.add(plato platoAgregado);
 }
-// ------------------------------------------------------------
-public void cambiarEstado(String nuevoEstado) {
-estado = nuevoEstado;
-}
 //-------------------------------------------------------------
 public double calcularTotal() {
 double total = 0
@@ -34,6 +30,7 @@ return total;
 //---------------------------------------------------------------
 public void mostrarPedido() {
 System.out.println("\n--- Pedido ---");
+System.out.println(" Id : " + id );
 System.out.println(" Cliente : " + cliente);
 System.out.println("Estado : " + estado);
 
@@ -51,7 +48,6 @@ return;
 estado = nuevo;
 }
 //-----------------------------------------------------------------
-public void mostrarPedido()
 
 }
 
