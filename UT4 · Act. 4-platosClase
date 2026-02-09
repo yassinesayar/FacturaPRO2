@@ -9,7 +9,7 @@ this.precio = precio;
 this.cantidad = cantidad;
 }
 
-public double getTotal() {
+public double getSubTotal() {
 return cantidad * precio;
 }
 }
