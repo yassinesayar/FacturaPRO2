@@ -27,11 +27,18 @@ opcion = sc.NextInt();
 switch (opcion) {
 
 case 1: 
-System.out.println(" Nombre del plato");
-String y 
+System.out.println("Nombre del plato");
+String y = sc.NextLine();
 
+System.out.println("Precio: ");
+double precio = sc.NextLine();
 
+System.out.println("Cantidad :");
+int cantidad = sc.nextInt();
 
+pedido.agregarPlato(new Plato(n, precio, cantidad));
+
+break;
 
 
 } while ( opcion != 4);
