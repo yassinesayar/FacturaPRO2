@@ -27,6 +27,8 @@ opcion = sc.NextInt();
 switch (opcion) {
 
 case 1: 
+System.out.println(" Nombre del plato");
+String y 
 
 
 
