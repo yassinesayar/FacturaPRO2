@@ -1,35 +1,37 @@
 import java.util.ArrayList;
 
 public class pedido {
-int id;
-String cliente;
-String lista_de_platos;
-String estado;
-ArrayList<plato> platos = new ArrayList<>();
+private int id;
+private String cliente;
+private EstadoPedido estado;
+private ArrayList<plato> platos
 
-public pedido(int id, String cliente, String lista_de_platos, String estado){
-this.id = id;
+public pedido(int id, String cliente, String estado){
+this.id = contador++;
 this.cliente = cliente;
-this.lista_de_platos = lista_de_platos;
-this.estado = "Recibido";
+this.estado = "EstadoPedido.RECIBIDO;
+this.platos = new ArrayList<>();
 }
-
-public void agregarplato (plato platoRecibido){
-platos.add(plato platoRecibido);
+//-------------------------------------------------------------
+public void agregarplato (plato platoAgregado){
+if ( platos.size >= 5 ){
+System.out.println("No se pueden agregar mas de 5 platos");
 }
-
+platos.add(plato platoAgregado);
+}
+// ------------------------------------------------------------
 public void cambiarEstado(String nuevoEstado) {
 estado = nuevoEstado;
 }
-
+//-------------------------------------------------------------
 public double calcularTotal() {
 double total = 0
 for ( plato platoRecibido : platos ) {
-  total += p.SubTotal();
+  total += platoAgregado.getSubTotal();
 }
 return total;
 }
-
+//---------------------------------------------------------------
 public void mostrarPedido() {
 System.out.println("\n--- Pedido ---");
 System.out.println(" Cliente : " + cliente);
@@ -40,9 +42,16 @@ System.out.println(platoRecibido);
 }
 System.out.println("TOTAL: " + calcularTotal() + "€");
 }
-
-
-
+//--------------------------------------------------------------
+public void cambiarEstado(EstadoPedidonuevo){
+if (nuevo.ordinal() <= estado.ordinal()){
+System.out.println("No se puede retroceder el estado");
+return; 
+}
+estado = nuevo;
+}
+//-----------------------------------------------------------------
+public void mostrarPedido()
 
 }
 
