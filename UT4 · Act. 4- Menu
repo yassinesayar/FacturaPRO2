@@ -1,0 +1,41 @@
+import java.util.Scanner;
+
+public class main {
+
+public static void main (String[] args) {
+Scanner sc = new Scanner (System.in);
+
+
+System.out.println("Nombre del cliente");
+String nombre = sc.NextLine();
+
+pedido pedido = new pedido(nombre);
+
+int opcion;
+
+do {
+System.out.println("=======================================");
+System.out.println("                 Menu                  ");
+System.out.println(" 1º    ---   Añadir plato   ---        ");
+System.out.println(" 2º    ---  Cambiar estado  ---        ");
+System.out.println(" 3º    ---  Mostrar pedido  ---        ");
+System.out.println(" 4º    ---       Salir      ---        ");     
+System.out.println("=======================================");
+
+opcion = sc.NextInt();
+
+switch (opcion) {
+
+case 1: 
+
+
+
+
+
+} while ( opcion != 4);
+
+
+
+
+}
+}
