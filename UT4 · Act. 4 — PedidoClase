@@ -13,16 +13,37 @@ this.cliente = cliente;
 this.lista_de_platos = lista_de_platos;
 this.estado = "Recibido";
 }
+
 public void agregarplato (plato platoRecibido){
 platos.add(plato platoRecibido);
 }
+
 public void cambiarEstado(String nuevoEstado) {
 estado = nuevoEstado;
 }
+
 public double calcularTotal() {
 double total = 0
-for ( plato platoRecibido : platos
+for ( plato platoRecibido : platos ) {
+  total += p.SubTotal();
 }
+return total;
+}
+
+public void mostrarPedido() {
+System.out.println("\n--- Pedido ---");
+System.out.println(" Cliente : " + cliente);
+System.out.println("Estado : " + estado);
+
+for (plato platoRecibido : platos ) {
+System.out.println(platoRecibido);
+}
+System.out.println("TOTAL: " + calcularTotal() + "€");
+}
+
+
+
+
 }
 
 
