@@ -42,8 +42,12 @@ pedido.agregarPlato(new Plato(n, precio, cantidad));
 break;
 
 case 2: 
-System.out.println ("Nuevo Estado");
-pedido.cambiarEstado(estado);
+System.out.println ("0 RECIBIDO");
+System.out.println("1 EN_PREPARACION");
+System.out.println("2 LISTO");
+System.out.println("3 ENTREGADO");
+int e = sc.nextInt();
+pedido.cambiarEstado(EstadoPedido.values()[e]);
 break;
 
 case 3:
