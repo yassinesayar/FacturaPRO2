@@ -40,7 +40,15 @@ pedido.agregarPlato(new Plato(n, precio, cantidad));
 
 break;
 
+case 2: 
+System.out.println ("Nuevo Estado");
+pedido.cambiarEstado(estado);
+break;
 
+case 3:
+pedido.mostrarPedido();
+break;
+}
 } while ( opcion != 4);
 
 
