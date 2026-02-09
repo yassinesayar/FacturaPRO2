@@ -13,10 +13,16 @@ this.cliente = cliente;
 this.lista_de_platos = lista_de_platos;
 this.estado = "Recibido";
 }
-public void agregarplato (plato p){
-platos.add(
+public void agregarplato (plato platoRecibido){
+platos.add(plato platoRecibido);
 }
-
+public void cambiarEstado(String nuevoEstado) {
+estado = nuevoEstado;
+}
+public double calcularTotal() {
+double total = 0
+for ( plato platoRecibido : platos
+}
 }
 
 
