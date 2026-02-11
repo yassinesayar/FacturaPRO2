@@ -1,0 +1,15 @@
+public class Platos {
+  String nombre;
+  double precio;
+  int cantidad;
+
+public platos (String nombre, double precio, int cantidad){
+  this.nombre = nombre;
+  this.precio = precio;
+  this.canntidad = cantidad;
+}
+
+public double getSubTotal(){
+  return cantidad * precio;
+}
+}
