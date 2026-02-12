@@ -1,0 +1,6 @@
+public enum EstadoPedido {
+    RECIBIDO,
+    EN_PREPARACIÓN,
+    ENTREGADO,
+    LISTO
+}
